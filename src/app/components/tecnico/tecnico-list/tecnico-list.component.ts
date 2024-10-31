@@ -24,13 +24,13 @@ export class TecnicoListComponent implements OnInit{
 
   ngOnInit(): void { 
     this.findAll();
-    this.dataSource.paginator = this.paginator;
   }
 
   findAll() {
     this.service.findAll().subscribe(resposta => {
       this.ELEMENT_DATA = resposta 
       this.dataSource = new MatTableDataSource<Tecnico>(resposta);
+      this.dataSource.paginator = this.paginator;
     })
   }
 
