@@ -4,7 +4,6 @@ import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from 'src/app/models/credenciais';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
-import { HttpResponse , HttpInterceptor } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
