@@ -21,13 +21,6 @@ export class AuthService {
       responseType: 'text'
     })
   }
- // authenticate(creds: any): Observable<HttpResponse<any>> {
- //   return this.http.post<any>(`${API_CONFIG.baseUrl}/login`, creds, { observe: 'response' });
- // }
-
-  //authenticate(creds: any): Observable<HttpResponse<any>> {
-  //  return this.http.post<any>('http://localhost:8080/login', creds, { observe: 'response' });
-  //}
   
   successfulLogin(authToken: string) {
     localStorage.setItem('token' , authToken);
