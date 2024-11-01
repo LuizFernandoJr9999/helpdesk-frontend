@@ -34,6 +34,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
+import { provideNgxMask } from 'ngx-mask';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 @NgModule({
@@ -47,8 +48,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     TecnicoCreateComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule, 
+     AppRoutingModule,
     BrowserAnimationsModule,
     // Forms
         FormsModule, 
@@ -75,8 +76,12 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
           closeButton: true,
           progressBar: true 
         })
-  ],
-  providers: [AuthInterceptorProvider],
+      ],
+  providers: [provideNgxMask({
+      dropSpecialCharacters: true, // ou qualquer outra configuração
+      // adicione outras configurações aqui
+     }),
+    AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
