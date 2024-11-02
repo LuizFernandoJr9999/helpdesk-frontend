@@ -46,7 +46,7 @@ export class TecnicoDeleteComponent {
     this.toast.success('Técnico deletado com sucesso', 'Delete');
     this.router.navigate(['tecnicos'])
   }, ex => {
-      console.log(ex);
+      //console.log(ex);
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
           this.toast.error(element.message);
