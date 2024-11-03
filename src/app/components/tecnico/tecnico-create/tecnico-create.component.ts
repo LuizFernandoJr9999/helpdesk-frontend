@@ -23,7 +23,7 @@ export class TecnicoCreateComponent {
   }
   
   nome  = new   FormControl(null, Validators.minLength(3));
-  cpf   = new       FormControl(null, Validators.required);
+  cpf   = new   FormControl(null, Validators.required);
   email = new   FormControl(null, Validators.email);
   senha = new   FormControl(null, Validators.minLength(3));
 
