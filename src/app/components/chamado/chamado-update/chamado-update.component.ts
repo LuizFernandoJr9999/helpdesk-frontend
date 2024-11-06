@@ -15,6 +15,7 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
   styleUrls: ['./chamado-update.component.css']
 })
 export class ChamadoUpdateComponent {
+
   chamado: Chamado = {
     prioridade: '',
     status: '',
