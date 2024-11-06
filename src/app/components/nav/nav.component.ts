@@ -18,7 +18,8 @@ export class NavComponent implements OnInit{
     //this.router.navigate(['home'])    
     //this.router.navigate(['tecnicos'])    
     //this.router.navigate(['chamados'])    
-    this.router.navigate(['chamados/create'])    
+    //this.router.navigate(['chamados/create'])    
+    this.router.navigate(['chamados/update/1'])    
   }
 
   logout(){
