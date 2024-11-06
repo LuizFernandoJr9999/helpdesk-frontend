@@ -19,7 +19,8 @@ export class NavComponent implements OnInit{
     //this.router.navigate(['tecnicos'])    
     //this.router.navigate(['chamados'])    
     //this.router.navigate(['chamados/create'])    
-    this.router.navigate(['chamados/update/1'])    
+    //this.router.navigate(['chamados/update/1'])    
+    this.router.navigate(['chamados/read/1'])    
   }
 
   logout(){
