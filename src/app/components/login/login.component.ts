@@ -95,7 +95,7 @@ export class LoginComponent implements OnInit{
     
           if (token) {
             this.service.successfulLogin(token);
-            this.toast.info('Login realizado com sucesso!');
+            this.toast.info('Login realizado com sucesso!', 'login', {timeOut: 2000});
             this.router.navigate(['/home']);
           } else {
             this.toast.error('Falha ao obter o token de autenticação.');
